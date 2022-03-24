@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Actividad3</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./pract1.html">Practica 1</a></li>
+        <li><a href="./pract2.html">Practica 2</a></li>
+        <li><a href="./pract3.html">Practica 3</a></li>
+        <li><a href="./pract4.html">Practica 4</a></li>
+        <li><a href="./pract5.html">Practica 5</a></li>
+        <li><a href="./pract6.html">Practica 6</a></li>
+        <li><a href="./pract7.html">Practica 7</a></li>
+        <li><a href="./pract8.html">Practica 8</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <section>
+          <h3>h)</h3>
+          <p>
+            Solicitar día y mes de nacimiento para determinar el signo zodiacal
+            de una persona.
+          </p>
+
+          <form action="#">
+            <p>Dia:</p>
+            <input type="number" min="28" max="31" id="day" />
+            <p>Mes:</p>
+            <input type="number" min="1" max="12" id="month" />
+
+            <p>Tu signo zodiacal:</p>
+            <input type="text" disabled id="display" />
+
+            <input type="button" value="Calcular!"" onclick="calc()">
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <script>
+      const display = document.querySelector("#display");
+
+      const calc = () => {
+        const day = Number(document.querySelector("#day").value),
+          month = Number(document.querySelector("#month").value);
+
+        let sig;
+
+        if ((month == 1 && day >= 21) || (month == 2 && day <= 19)) {
+          sig = "Acuario";
+        } else if ((month == 2 && day >= 20) || (month == 3 && day <= 20)) {
+          sig = "Piscis";
+        } else if ((month == 3 && day >= 21) || (month == 4 && day <= 20)) {
+          sig = "Aries";
+        } else if ((month == 4 && day >= 21) || (month == 5 && day <= 20)) {
+          sig = "Tauro";
+        } else if ((month == 5 && day >= 21) || (month == 6 && day <= 21)) {
+          sig = "Géminis";
+        } else if ((month == 6 && day >= 22) || (month == 7 && day <= 22)) {
+          sig = "Cáncer";
+        } else if ((month == 7 && day >= 23) || (month == 8 && day <= 23)) {
+          sig = "Leo";
+        } else if ((month == 7 && day >= 24) || (month == 8 && day <= 22)) {
+          sig = "Virgo";
+        } else if ((month == 9 && day >= 23) || (month == 10 && day <= 22)) {
+          sig = "Libra";
+        } else if ((month == 10 && day >= 23) || (month == 11 && day <= 22)) {
+          sig = "Escorpio";
+        } else if ((month == 11 && day >= 23) || (month == 12 && day <= 21)) {
+          sig = "Sagitario";
+        } else if ((month == 12 && day >= 22) || (month == 1 && day <= 20)) {
+          sig = "Capricornio";
+        } 
+
+        display.value = sig;
+      };
+    </script>
+  </body>
+</html>

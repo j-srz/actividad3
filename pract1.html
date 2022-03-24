@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Actividad3</title>
-</head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="./index.html">Inicio</a></li>
-      <li><a href="./pract1.html">Practica 1</a></li>
-      <li><a href="./pract2.html">Practica 2</a></li>
-      <li><a href="./pract3.html">Practica 3</a></li>
-      <li><a href="./pract4.html">Practica 4</a></li>
-      <li><a href="./pract5.html">Practica 5</a></li>
-    </ul>
-  </nav>
-  <main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Actividad3</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./pract1.html">Practica 1</a></li>
+        <li><a href="./pract2.html">Practica 2</a></li>
+        <li><a href="./pract3.html">Practica 3</a></li>
+        <li><a href="./pract4.html">Practica 4</a></li>
+        <li><a href="./pract5.html">Practica 5</a></li>
+        <li><a href="./pract6.html">Practica 6</a></li>
+        <li><a href="./pract7.html">Practica 7</a></li>
+        <li><a href="./pract8.html">Practica 8</a></li>
+      </ul>
+    </nav>
+    <main>
       <article>
-          <section>
-              <h3>Determinar el numero mayor de 2 numeros ingresados por el usuario</h3>
-              <form action="#">
-                  <input type="text" disabled placeholder="Numero mayor" id="display">
-                  <input type="number" placeholder="Numero 1" id="num1">
-                  <input type="number" placeholder="Numero 2" id="num2">
-                  <input type="button" value="Calcular!" onclick="calc()">
-              </form>
-          </section>
+        <section>
+          <h3>
+            Determinar el numero mayor de 2 numeros ingresados por el usuario
+          </h3>
+          <form action="#">
+            <input
+              type="text"
+              disabled
+              placeholder="Numero mayor"
+              id="display"
+            />
+            <input type="number" placeholder="Numero 1" id="num1" />
+            <input type="number" placeholder="Numero 2" id="num2" />
+            <input type="button" value="Calcular!" onclick="calc()" />
+          </form>
+        </section>
       </article>
-  </main>
+    </main>
 
+    <script>
+      const display = document.querySelector("#display");
 
-
-
-
-
-
-
-  <script>
-    const display = document.querySelector('#display');
-
-    function calc() {
-        const num1 = Number(document.querySelector('#num1').value),
-              num2 = Number(document.querySelector('#num2').value);
+      function calc() {
+        const num1 = Number(document.querySelector("#num1").value),
+          num2 = Number(document.querySelector("#num2").value);
 
         if (num1 > num2) {
-            display.value = num1;
+          display.value = num1;
         } else if (num2 > num1) {
-            display.value = num2;
+          display.value = num2;
         }
-    }
-  </script>
-</body>
+      }
+    </script>
+  </body>
 </html>

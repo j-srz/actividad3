@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Actividad3</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./pract1.html">Practica 1</a></li>
+        <li><a href="./pract2.html">Practica 2</a></li>
+        <li><a href="./pract3.html">Practica 3</a></li>
+        <li><a href="./pract4.html">Practica 4</a></li>
+        <li><a href="./pract5.html">Practica 5</a></li>
+        <li><a href="./pract6.html">Practica 6</a></li>
+        <li><a href="./pract7.html">Practica 7</a></li>
+        <li><a href="./pract8.html">Practica 8</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <section>
+          <h3>Tienda de zapatos</h3>
+          <p>
+            Realizar una página para una tienda de zapatos donde por la compra
+            puede tener descuento según el tipo de membresía con la que cuente
+            el cliente, los tipos de membresía pueden ser: Tipo 105 con 13 %
+            descuento, tipo 206 con 22 % de descuento y tipo 307 con 28 % de
+            descuento.
+          </p>
+          <form action="#">
+            <p>Tipo de membresia:</p>
+            <input type="text" id="membresia" />
+            <p>Total:</p>
+            <input type="text" id="total" />
+            <p>Total con descuento:</p>
+            <input type="text" disabled id="display" />
+            <input type="button" value="Calcular!"" onclick="calc()">
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <script>
+      const display = document.querySelector("#display");
+
+      const calc = () => {
+        const typeU = document.querySelector("#membresia").value,
+          total = Number(document.querySelector("#total").value);
+
+        let totalDis;
+
+        if (typeU == "105") {
+          totalDis = (total * 1.13).toFixed(2);
+        } else if (typeU == "206") {
+          totalDis = (total * 1.22).toFixed(2);
+        } else if (typeU == "307") {
+          totalDis = (total * 1.28).toFixed(2);
+        }
+
+        display.value = totalDis;
+      };
+    </script>
+  </body>
+</html>
