@@ -19,28 +19,35 @@
     </nav>
     <article>
       <section>
-        <h3>Determinar si un número es positivo, negativo o cero.</h3>
+        <h3>
+          Solicitar el año de nacimiento y determinar si la persona es mayor de
+          edad o no
+        </h3>
         <form action="#">
           <input type="text" disabled placeholder="?" id="display" />
-          <input type="number" placeholder="Numero" id="num" />
+          <p>Año de nacimiento:</p>
+          <input type="number" placeholder="Numero" id="year" />
           <input type="button" value="Calcular!" onclick="calc()" />
         </form>
       </section>
     </article>
 
     <script>
-      const display = document.querySelector("#display");
+      const display = document.querySelector("#display"),
+        time = new Date(),
+        yearAct = time.getFullYear();
 
       function calc() {
-        const num = Number(document.querySelector("#num").value);
+        const year = Number(document.querySelector("#year").value);
 
-        if (num > 0) {
-          display.value = "Positivo";
-        } else if (num === 0) {
-          display.value = "Es cero";
-        } else if (num < 0) {
-          display.value = "Negativo";
+        const edad = (year - yearAct)*-1;
+
+        if (edad>= 18) {
+          display.value = "Eres mayor de edad!";
+        } else if (edad < 18) {
+          display.value = "Eres menor de edad ";
         }
+
       }
     </script>
   </body>

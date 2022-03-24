@@ -19,7 +19,7 @@
     </nav>
     <article>
       <section>
-        <h3>Determinar si un número es positivo, negativo o cero.</h3>
+        <h3>Determinar si un número es par o impar</h3>
         <form action="#">
           <input type="text" disabled placeholder="?" id="display" />
           <input type="number" placeholder="Numero" id="num" />
@@ -34,13 +34,11 @@
       function calc() {
         const num = Number(document.querySelector("#num").value);
 
-        if (num > 0) {
-          display.value = "Positivo";
-        } else if (num === 0) {
-          display.value = "Es cero";
-        } else if (num < 0) {
-          display.value = "Negativo";
-        }
+        if (num%2 == 0) {
+          display.value = "Par";
+        } else if (num%2 != 0) {
+          display.value = "Inpar";
+        } 
       }
     </script>
   </body>

@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Actividad3</title>
-</head>
-<body>
-  <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Actividad3</title>
+  </head>
+  <body>
+    <nav>
       <ul>
+        <li><a href="./index.html">Inicio</a></li>
         <li><a href="./pract1.html">Practica 1</a></li>
         <li><a href="./pract2.html">Practica 2</a></li>
         <li><a href="./pract3.html">Practica 3</a></li>
         <li><a href="./pract4.html">Practica 4</a></li>
-    </ul>
-  </nav>
-  <main>
+        <li><a href="./pract5.html">Practica 5</a></li>
+      </ul>
+    </nav>
+    <main>
       <article>
-          <section>
-              <h3>Determinar el numero mayor de 2 numeros ingresados por el usuario</h3>
-              <form action="#">
-                  <input type="text" disabled placeholder="Numero mayor" id="display">
-                  <input type="number" placeholder="Numero 1" id="num1">
-                  <input type="number" placeholder="Numero 2" id="num2">
-                  <input type="number" placeholder="Numero 3" id="num3">
-                  <input type="button" value="Calcular!" onclick="calc()">
-              </form>
-          </section>
+        <section>
+          <h3>
+            b) Determinar el menor de tres números ingresados por el usuario
+          </h3>
+          <form action="#">
+            <input
+              type="text"
+              disabled
+              placeholder="Numero mayor"
+              id="display"
+            />
+            <input type="number" placeholder="Numero 1" id="num1" />
+            <input type="number" placeholder="Numero 2" id="num2" />
+            <input type="number" placeholder="Numero 3" id="num3" />
+            <input type="button" value="Calcular!" onclick="calc()" />
+          </form>
+        </section>
       </article>
-  </main>
+    </main>
 
+    <script>
+      const display = document.querySelector("#display");
 
+      function calc() {
+        const num1 = Number(document.querySelector("#num1").value),
+          num2 = Number(document.querySelector("#num2").value),
+          num3 = Number(document.querySelector("#num3").value);
 
+        let min = 0;
 
+        if (num1 < num2 && num1 < num3) {
+          min = num1;
+        } else if (num2 < num1 && num2 < num3) {
+          min = num2;
+        } else if (num3 < num2 && num3 < num2) {
+          min = num3;
+        }
 
-
-
-
-  <script>
-    const display = document.querySelector('#display');
-
-    function calc() {
-        const num1 = Number(document.querySelector('#num1').value),
-              num2 = Number(document.querySelector('#num2').value),
-              num3 = Number(document.querySelector('#num3').value),
-              min = num1,
-              numeros = [num1, num2, num3];
-
-
-        numeros.forEach(element => {
-          
+        display.value = min;
       }
-  </script>
-</body>
+    </script>
+  </body>
 </html>
