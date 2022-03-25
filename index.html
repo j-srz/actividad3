@@ -1,24 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Actividad3</title>
-</head>
-<body>
-  <nav>
-      <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./pract1.html">Practica 1</a></li>
-        <li><a href="./pract2.html">Practica 2</a></li>
-        <li><a href="./pract3.html">Practica 3</a></li>
-        <li><a href="./pract4.html">Practica 4</a></li>
-        <li><a href="./pract5.html">Practica 5</a></li>
-        <li><a href="./pract6.html">Practica 6</a></li>
-        <li><a href="./pract7.html">Practica 7</a></li>
-        <li><a href="./pract8.html">Practica 8</a></li>
-    </ul>
-  </nav>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Actividad3</title>
+  </head>
+  <body>
+    <nav class="menu">
+      <section class="menu__container">
+        <h1 class="menu__logo">
+          <a href="./index.html" class="menu__link--logo">JS</a>
+        </h1>
+
+        <ul class="menu__links">
+          <li class="munu__item menu__item--show">
+            <a href="./index.html" class="menu__link"
+              >Practicas S <i class="fa-solid fa-caret-down menu__icon"></i>
+            </a>
+
+            <ul class="menu__nesting">
+              <li class="memu__inside"></li>
+              <li class="memu__inside">
+                <a href="#" class="menu__link menu__link--inside">Practica 1</a>
+              </li>
+              <li class="memu__inside">
+                <a href="#" class="menu__link menu__link--inside">Practica 2</a>
+              </li>
+              <li class="memu__inside">
+                <a href="#" class="menu__link menu__link--inside">Practica 3</a>
+              </li>
+              <li class="memu__inside">
+                <a href="#" class="menu__link menu__link--inside">Practica 4</a>
+              </li>
+              <li class="memu__inside">
+                <a href="#" class="menu__link menu__link--inside">Practica 5</a>
+              </li>
+              <li class="memu__inside">
+                <a href="#" class="menu__link menu__link--inside">Practica 6</a>
+              </li>
+              <li class="memu__inside">
+                <a href="#" class="menu__link menu__link--inside">Practica 7</a>
+              </li>
+              <li class="memu__inside">
+                <a href="#" class="menu__link menu__link--inside">Practica 8</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="munu__item">
+            <a href="./index.html" class="menu__link">Zapatos</a>
+          </li>
+
+          <li class="munu__item">
+            <a href="./index.html" class="menu__link">Signo Zodiaco</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+    <header class="main">
+      <h2 class="main__title">
+        <span class="main__text main__text--prin">Actividad 3:</span>
+        <span class="main__text">Sentencias de Control</span>
+        <span class="main__text">Menú HTML, CSS y JS</span>
+        <a href="#sec1" class="main__button"
+          >Practicas
+          <span class="button__arrow"
+            ><i class="fa-solid fa-arrow-right-long"></i></span
+        ></a>
+      </h2>
+      <!-- <div class="main__container">
+        <i class="fa-solid fa-code main__icon"></i>
+      </div> -->
+    </header>
+
+    <main class="principal">
+      <section class="tabs">
+        <article class="tabs__item grid1">
+          <h3 class="tabs__title">Sentencias de control</h3>
+          <p class="tabs__text">
+            El orden de ejecución de las sentencias es lo que se conoce por el
+            flujo del programa, y se puede variar a voluntad utilizando las
+            sentencias de control de flujo, con las que es muy fácil alterarlo
+            para adecuarlo a nuestras necesidades Su propósito es determinar el
+            orden en que se ejecutaran las distintas sentencias dentro del
+            programa.
+          </p>
+        </article>
+
+        <article class="tabs__item grid2">
+          <h3 class="tabs__title">if</h3>
+          <p class="tabs__text">
+            La sentencia condicional if se usa para tomar decisiones, este
+            evaluá básicamente una operación lógica, es decir una expresión que
+            de como resultado True o False , y ejecuta la pieza de código
+            siguiente siempre y cuando el resultado sea verdadero.
+          </p>
+        </article>
+        <article class="tabs__item grid3">
+          <h3 class="tabs__title">else</h3>
+          <p class="tabs__text">
+            La sentencia condicional else permite que un programa ejecute unas
+            instrucciones cuando no se cumple una condición.
+          </p>
+        </article>
+        <article class="tabs__item grid4">
+          <h3 class="tabs__title">switch</h3>
+          <p class="tabs__text">
+            La sentencia condicional switch es un tipo de mecanismo de control
+            de selección utilizado para permitir que el valor de una variable o
+            expresión cambie el flujo de control de la ejecución del programa.
+          </p>
+        </article>
+
+        <article id="sec1" class="tabs__item grid5">
+          <h3 class="tabs__title">a)</h3>
+          <p class="tabs__text">
+            Determinar el menor de tres números ingresados por el usuario
+          </p>
+
+          <a href="./pract1.html" class="tabs__button tabs__button--black"
+            >Ver</a
+          >
+        </article>
+
+        <article class="tabs__item grid6">
+          <h3 class="tabs__title">b)</h3>
+          <p class="tabs__text">
+            Determinar el mayor de dos números ingresados por el usuario
+          </p>
+
+          <a href="./pract1.html" class="tabs__button tabs__button--black"
+            >Ver</a
+          >
+        </article>
+
+        <article class="tabs__item grid7">
+          <h3 class="tabs__title">c)</h3>
+          <p class="tabs__text">
+            Determinar si un número es positivo, negativo o cero.
+          </p>
+
+          <a href="./pract1.html" class="tabs__button tabs__button--black"
+            >Ver</a
+          >
+        </article>
+
+        <article class="tabs__item grid8">
+          <h3 class="tabs__title">d)</h3>
+          <p class="tabs__text">Determinar si un número es par o impar</p>
+
+          <a href="./pract1.html" class="tabs__button tabs__button--black"
+            >Ver</a
+          >
+        </article>
+
+        <article class="tabs__item grid9">
+          <h3 class="tabs__title">e)</h3>
+          <p class="tabs__text">
+            Solicitar el año de nacimiento y determinar si la persona es mayor
+            de edad o no
+          </p>
+
+          <a href="./pract1.html" class="tabs__button tabs__button--black"
+            >Ver</a
+          >
+        </article>
+
+        <article class="tabs__item grid10">
+          <h3 class="tabs__title">f)</h3>
+          <p class="tabs__text">
+            Realizar una página para una tienda de zapatos donde por la
+            compra puede tener descuento según el tipo de membresía con la que
+            cuente el cliente, los tipos de membresía pueden ser: Tipo 105 con
+            13 % descuento, tipo 206 con 22 % de descuento y tipo 307 con 28 %
+            de descuento.
+          </p>
+
+          <a href="./pract1.html" class="tabs__button tabs__button--black"
+            >Ver</a
+          >
+        </article>
+
+
+        <article class="tabs__item grid11">
+          <h3 class="tabs__title">g)</h3>
+          <p class="tabs__text">
+            Una página para determinar si un estudiante es aceptado o no en la universidad en base a los siguientes criterios:
+            <ul class="tabs__list">
+              <li class="list__item">Promedio de bachillerato mayor a 8.5</li>
+              <li class="list__item">Resultado de EXANI mayor a 1050 puntos</li>
+              <li class="list__item">Resultado de examen de ingreso mayor a 800 puntos.</li>
+            </ul>
+          </p>
+
+          <a href="./pract1.html" class="tabs__button tabs__button--black"
+            >Ver</a
+          >
+        </article>
+
+
+        <article class="tabs__item grid12">
+          <h3 class="tabs__title">h)</h3>
+          <p class="tabs__text">
+            Solicitar día y mes de nacimiento para determinar el signo zodiacal de una persona.
+          </p>
+
+          <a href="./pract1.html" class="tabs__button tabs__button--black"
+            >Ver</a
+          >
+        </article>
+
+
+        <article class="tabs__item grid13">
+          <h3 class="tabs__title">i)</h3>
+          <p class="tabs__text">
+            Determinar el menor, mayor y promedio de una cantidad de números ingresados por el usuario.
+          </p>
+
+          <a href="./pract1.html" class="tabs__button tabs__button--black"
+            >Ver</a
+          >
+        </article>
+
+
+        <article class="tabs__item grid14">
+          <h3 class="tabs__title">j)</h3>
+          <p class="tabs__text">
+            Solicitar un número y sumar todos los anteriores a el hasta 0, finalmente muestra la suma y la cantidad de números sumados.
+          </p>
+
+          <a href="./pract1.html" class="tabs__button tabs__button--black"
+            >Ver</a
+          >
+        </article>
+
+
+        <article class="tabs__item grid15">
+          <h3 class="tabs__title">k)</h3>
+          <p class="tabs__text">
+            Solicitar una cantidad de números, y mostrarlos en orden ascendente. (usando arreglo)
+          </p>
+
+          <a href="./pract1.html" class="tabs__button tabs__button--black"
+            >Ver</a
+          >
+        </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </section>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/20dbefd043.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>
