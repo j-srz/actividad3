@@ -4,24 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Actividad3</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="./index.html">Inicio</a></li>
-        <li><a href="./pract1.html">Practica 1</a></li>
-        <li><a href="./pract2.html">Practica 2</a></li>
-        <li><a href="./pract3.html">Practica 3</a></li>
-        <li><a href="./pract4.html">Practica 4</a></li>
-        <li><a href="./pract5.html">Practica 5</a></li>
-        <li><a href="./pract6.html">Practica 6</a></li>
-        <li><a href="./pract7.html">Practica 7</a></li>
-        <li><a href="./pract8.html">Practica 8</a></li> 
-        <li><a href="./pract9.html">Practica 9</a></li> 
-        <li><a href="./pract10.html">Practica 10</a></li> 
-        <li><a href="./pract11.html">Practica 11</a></li> 
+    <nav class="main-nav">
+      <h1 class="main-nav__logo">
+        <a href="./index.html">JS</a>
+      </h1>
+
+
+      <!-- <div class="main-nav__item">
+        <p class="main-nav__text">Practicas</p>
+      </div> -->
+
+      <ul class="main-nav__list">
+        <li class="list__link">
+          <a href="./pract1.html" class="list__item">a)</a>
+        </li>
+        <li class="list__link">
+          <a href="./pract2.html" class="list__item">b)</a>
+        </li>
+        <li class="list__link">
+          <a href="./pract3.html" class="list__item">c)</a>
+        </li>
+        <li class="list__link">
+          <a href="./pract4.html" class="list__item">d)</a>
+        </li>
+        <li class="list__link">
+          <a href="./pract5.html" class="list__item">e)</a>
+        </li>
+        <li class="list__link">
+          <a href="./pract6.html" class="list__item">f)</a>
+        </li>
+        <li class="list__link">
+          <a href="./pract7.html" class="list__item">g)</a>
+        </li>
+        <li class="list__link">
+          <a href="./pract8.html" class="list__item">h)</a>
+        </li>
+        <li class="list__link">
+          <a href="./pract9.html" class="list__item list__item--active">i)</a>
+        </li>
+
+        <li class="list__link">
+          <a href="./pract10.html" class="list__item">j)</a>
+        </li>
+        <li class="list__link">
+          <a href="./pract11.html" class="list__item">k)</a>
+        </li>
       </ul>
+
+      <button type="button" class="main-nav__button ham">
+        <span class="br-1"></span>
+        <span class="br-2"></span>
+        <span class="br-3"></span>
+      </button>
+
+
     </nav>
     <main>
       <article>
@@ -42,6 +83,7 @@
       </article>
     </main>
 
+    <script src="./js/app.js"></script>
     <script>
       const display = document.querySelector("#display");
 

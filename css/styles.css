@@ -290,8 +290,9 @@ p {
     }
 
     .list__item {
-
+        display: block;
         padding: 10px;
+        font-size: 4rem;
 
     }
 
@@ -605,4 +606,40 @@ p {
 .form__text {
     justify-self: start;
 
+}
+
+
+
+.form--6 {
+    grid-template-columns: 1fr 3fr;
+}
+
+.form__text--6 {
+    justify-self: start;
+}
+
+.tabs__text--6 {
+    margin-bottom: 20px;
+}
+
+.form--7 {
+    grid-template-columns: 1fr 3fr;
+}
+
+.tabs__list--7 {
+    font-size: 1.5rem;
+    padding: 1px 20px;
+}
+
+.form__text--7 {
+    justify-self: start;
+}
+
+
+.form__text--8 {
+    justify-self: start;
+}
+
+.tabs__text--8 {
+    margin-bottom: 20px;
 }
