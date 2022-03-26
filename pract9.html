@@ -17,7 +17,7 @@
         <li><a href="./pract5.html">Practica 5</a></li>
         <li><a href="./pract6.html">Practica 6</a></li>
         <li><a href="./pract7.html">Practica 7</a></li>
-        <li><a href="./pract8.html">Practica 8</a></li>
+        <li><a href="./pract8.html">Practica 8</a></li> 
         <li><a href="./pract9.html">Practica 9</a></li> 
         <li><a href="./pract10.html">Practica 10</a></li> 
         <li><a href="./pract11.html">Practica 11</a></li> 
@@ -27,21 +27,15 @@
       <article>
         <section>
           <h3>
-            <span>f)</span> Realizar una página para una tienda de zapatos
+            <span>i)</span> Determinar el menor, mayor y promedio de una cantidad de números ingresados por el usuario.
           </h3>
-          <p>
-            Donde por la compra puede tener descuento según el tipo de membresía
-            con la que cuente el cliente, los tipos de membresía pueden ser:
-            Tipo 105 con 13 % descuento, tipo 206 con 22 % de descuento y tipo
-            307 con 28 % de descuento.
-          </p>
+          
+
           <form action="#">
-            <p>Tipo de membresia:</p>
-            <input type="text" id="membresia" />
-            <p>Total:</p>
-            <input type="text" id="total" />
-            <p>Total con descuento:</p>
-            <input type="text" disabled id="display" />
+            <input type="text" disabled id="display">
+
+            <input type="text"  placeholder="Numeros a ingresar"/>
+
             <input type="button" value="Calcular!"" onclick="calc()">
           </form>
         </section>
@@ -52,20 +46,14 @@
       const display = document.querySelector("#display");
 
       const calc = () => {
-        const typeU = document.querySelector("#membresia").value,
-          total = Number(document.querySelector("#total").value);
+        const day = Number(document.querySelector("#day").value),
+          month = Number(document.querySelector("#month").value);
 
-        let totalDis;
+        let sig;
 
-        if (typeU == "105") {
-          totalDis = (total * 1.13).toFixed(2);
-        } else if (typeU == "206") {
-          totalDis = (total * 1.22).toFixed(2);
-        } else if (typeU == "307") {
-          totalDis = (total * 1.28).toFixed(2);
-        }
+        
 
-        display.value = totalDis;
+        display.value = sig;
       };
     </script>
   </body>
