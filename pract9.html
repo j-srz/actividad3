@@ -64,39 +64,38 @@
 
 
     </nav>
-    <main>
-      <article>
-        <section>
-          <h3>
-            <span>i)</span> Determinar el menor, mayor y promedio de una cantidad de números ingresados por el usuario.
-          </h3>
-          
+    <main class="principal">
+      <article class="tabs">
+        <section class="tabs__item--pract tabs__item--pract9">
+          <div class="tabs__container">
+            <h3 class="tabs__text--form">
+              <span class="tabs__text--letra">i)</span><br> Determinar el menor, mayor y promedio de una cantidad de números ingresados por el usuario.
+            </h3>
+            
+  
+            <form action="#" class="form--pract-9">
 
-          <form action="#">
-            <input type="text" disabled id="display">
+              <button type="button" id="i9">Agregar espacio</button>
 
-            <input type="text"  placeholder="Numeros a ingresar"/>
+              <div class="numeros">
 
-            <input type="button" value="Calcular!"" onclick="calc()">
-          </form>
+              </div>
+              
+              <button type="button" id="mostrar">Ver</button>
+              <p class="form__text--i9">Promedio:</p>
+              <input type="text" id="prom" disabled>
+              <p class="form__text--i9">Menor:</p>
+              <input type="text" id="menor" disabled>
+              <p class="form__text--i9">Mayor:</p>
+              <input type="text" id="mayor" disabled>
+              
+            </form>
+          </div>
         </section>
       </article>
     </main>
 
     <script src="./js/app.js"></script>
-    <script>
-      const display = document.querySelector("#display");
-
-      const calc = () => {
-        const day = Number(document.querySelector("#day").value),
-          month = Number(document.querySelector("#month").value);
-
-        let sig;
-
-        
-
-        display.value = sig;
-      };
-    </script>
+  
   </body>
 </html>

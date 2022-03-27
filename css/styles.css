@@ -643,3 +643,72 @@ p {
 .tabs__text--8 {
     margin-bottom: 20px;
 }
+
+
+
+.tabs__item--pract9 {
+    min-height: calc(96vh - 70px);
+    height: auto;
+}
+
+.numeros {
+    grid-column: 1/3;
+}
+
+.form--pract-9 {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 4fr;
+
+}
+
+
+
+.form__text--i9 {
+    align-self: center;
+}
+
+@media (max-width: 480px) {
+    .form--pract-9 {
+        display: flex;
+        flex-direction: column;
+    }
+    .form__text--i9 {
+        align-self: flex-start;
+    }
+}
+
+
+#i9, #mostrar {
+    background: var(--colorBlack);
+    color: var(--colorPrincipal);
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+    grid-column: 1/3;
+}
+
+
+.numeros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .numeros {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+.input--pract {
+    border: 2px solid rgba(0, 0, 0, .3);
+    background: var(--colorPrincipal);
+    padding: 6px;
+    border-radius: 5px;
+}
