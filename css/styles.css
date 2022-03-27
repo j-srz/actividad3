@@ -257,8 +257,13 @@ p {
     transition: all .3s;
 }
 
-.list__item:hover, .list__item--active {
+.list__item:hover {
     background-color: var(--colorComplementario);
+    box-shadow: inset 0 2px 0 0 var(--colorBlack);
+}
+
+.list__item--active {
+    background-color: var(--colorExt2);
     box-shadow: inset 0 2px 0 0 var(--colorBlack);
 }
 
