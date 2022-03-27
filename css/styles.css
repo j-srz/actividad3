@@ -5,6 +5,7 @@
     --colorSecundario: #1820EF;
     --colorComplementario: #FFC024;
     --colorBlack: #000;
+    --colorGris: #fbf5d9;
     --colorExt1: #822626;
     --colorExt2: #FF4E42;
     --colorExt3: #e85529;
@@ -51,10 +52,10 @@ body {
 
 }
 
-main {
+/* main {
     max-width: 1800px;
     margin: 0 auto;
-}
+} */
 
 
 input[type="text"], input[type="number"] {
@@ -71,6 +72,10 @@ input[type="button"] {
     padding: 10px 20px;
     border-radius: 5px;
     font-family: var(--fuente5);
+}
+
+input[disabled] {
+    background-color: var(--colorGris);
 }
 
 a {
@@ -265,7 +270,52 @@ p {
 .list__item--active {
     background-color: var(--colorExt2);
     box-shadow: inset 0 2px 0 0 var(--colorBlack);
+    animation-name: button-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
+
+
+@keyframes button-color {
+    0% {
+        background: var(--colorExt2);
+        color: var(--colorBlack);
+    }
+
+    25% {
+        background: var(--colorComplementario);
+        color: var(--colorBlack);
+    }
+
+    50% {
+        background: var(--colorExt4);
+        color: var(--colorBlack);
+    }
+
+    75% {
+        background: var(--colorSecundario);
+        color: var(--colorPrincipal);
+    }
+
+    100% {
+        background-color: var(--colorExt3);
+        color: var(--colorBlack);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 768px) {
     
@@ -371,6 +421,40 @@ p {
 
 .main__button:hover {
     box-shadow: -4px -4px 0 0 #ffd66f;
+    /* animation: buttonMain 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease; */
+    
+}
+
+@keyframes buttonMain {
+    0% {
+        box-shadow: -1px -1px 0 0 #ffd66f;
+    }
+
+    25% {
+        box-shadow: -2px -2px 0 0 var(--colorSecundario);
+        background-color: var(--colorSecundario);
+        color: var(--colorPrincipal);
+    }
+
+    50% {
+        box-shadow: -3px -3px 0 0 var(--colorExt4);
+        background-color: var(--colorExt4);
+        color: var(--colorBlack);
+    }
+
+    75% {
+        box-shadow: -4px -4px 0 0 var(--colorExt3);
+        background-color: var(--colorExt3);
+        color: var(--colorBlack);
+    }
+    100% {
+        box-shadow: -4px -4px 0 0 #9918ef;
+        background-color: #9918ef;
+        color: var(--colorBlack);
+    }
 }
 
 
@@ -583,7 +667,7 @@ p {
 
 .formulario__button {
     grid-column: 2/3;
-    width: 50%;
+    min-width: 50%;
 }
 
 
@@ -716,4 +800,10 @@ p {
     background: var(--colorPrincipal);
     padding: 6px;
     border-radius: 5px;
+}
+
+
+
+.tabs__text--form-10 {
+    margin-bottom: 20px;
 }

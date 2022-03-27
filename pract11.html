@@ -13,7 +13,6 @@
         <a href="./index.html">JS</a>
       </h1>
 
-
       <!-- <div class="main-nav__item">
         <p class="main-nav__text">Practicas</p>
       </div> -->
@@ -63,28 +62,20 @@
         <span class="br-2"></span>
         <span class="br-3"></span>
       </button>
-
-
     </nav>
-    <main>
-      <article>
-        <section>
-          <h3>
-            <span>k)</span> Solicitar una cantidad de números, y mostrarlos en orden ascendente. (usando arreglo)
-          </h3>
-          
+    <main class="principal">
+      <article class="tabs">
+        <section class="tabs__item--pract tabs__item--pract9">
+          <div class="tabs__container">
+            <h3 class="tabs__text--form">
+              <span class="tabs__text--letra">k)</span><br> Solicitar una cantidad de números, y mostrarlos en
+              orden ascendente. (usando arreglo)
+            </h3>
 
-          <form action="#">
-            <p>Dia:</p>
-            <input type="number" min="28" max="31" id="day" />
-            <p>Mes:</p>
-            <input type="number" min="1" max="12" id="month" />
-
-            <p>Tu signo zodiacal:</p>
-            <input type="text" disabled id="display" />
-
-            <input type="button" value="Calcular!"" onclick="calc()">
-          </form>
+            <form action="#">
+              
+            </form>
+          </div>
         </section>
       </article>
     </main>
@@ -98,8 +89,6 @@
           month = Number(document.querySelector("#month").value);
 
         let sig;
-
-        
 
         display.value = sig;
       };
